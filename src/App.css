@@ -12,16 +12,17 @@ body {
 	display: flex;
 	justify-content: center;
 	color: #36454f;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   font-weight: 600;
+  margin-bottom: 20px;
 }
 
-a {
+ul li a {
   text-decoration: none;
   color: #696969;
 }
 
-a:hover, a:link, a:active {
+ul li a:hover, a:link, a:active {
   color: #696969;
   text-decoration: none;
 }
@@ -32,12 +33,14 @@ ul {
 
 li {
   list-style-type: none;
+  color: black;
 }
 
 .nav {
   display: flex;
   justify-content: center;
-  margin-bottom: 35px;
+  padding-top: 20px;
+  font-size: 1.5rem;
 }
 
 .nav li {
