@@ -67,7 +67,7 @@ class Current extends React.Component {
     return (
       <div>
         <div className="current-results">
-          <h2>{this.state.date}</h2>
+          <h2>{new Date().toISOString().split('T')[0].replace('-', '-')}</h2>
           <p className="euro">{this.state.base}</p>
           <p className="compare-currency">{Object.values(this.state.rates)} {Object.keys(this.state.rates)}
           </p>
