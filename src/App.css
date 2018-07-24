@@ -95,3 +95,12 @@ ul {
 .compare-currency {
   font-size: 1.3rem;
 }
+
+.subBtn {
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+
+.histBtn {
+  margin-left: 10px;
+}

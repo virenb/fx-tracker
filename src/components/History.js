@@ -79,7 +79,7 @@ class History extends React.Component {
               <input type="text" placeholder="yyyy-mm-dd" name="date" value={this.state.date} onChange={this.setDate} required />
             </label>
             <span />
-            <input type="submit" value="Submit" className="btn btn-secondary btn-sm" disabled={!this.state.selectedCurrency} />
+            <input type="submit" value="Submit" className="btn btn-secondary btn-sm histBtn" disabled={!this.state.selectedCurrency} />
             <SelectCurrency
               selectedCurrency={this.state.selectedCurrency}
               onSelect={this.updateCurrency}

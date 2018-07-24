@@ -19,6 +19,7 @@ const SelectCurrency = (props) => {
               onClick={props.onSelect.bind(null, currency)}
               key={currency}
               className="btnSpace"
+              color="secondary"
             >
               {currency}
             </Button>
@@ -68,13 +69,14 @@ class Current extends React.Component {
         <div className="current-results">
           <h2>{this.state.date}</h2>
           <p className="euro">{this.state.base}</p>
-          <p className="compare-currency">{Object.values(this.state.rates)} {Object.keys(this.state.rates)}</p>
+          <p className="compare-currency">{Object.values(this.state.rates)} {Object.keys(this.state.rates)}
+          </p>
           <SelectCurrency
             selectedCurrency={this.state.selectedCurrency}
             onSelect={this.updateCurrency}
           />
           <form onSubmit={this.handleSubmit}>
-            <input type="submit" value="Submit" className="btn btn-secondary" />
+            <input type="submit" value="Submit" className="btn btn-secondary subBtn" />
           </form>
           <CurrencyTable />
         </div>
