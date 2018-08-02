@@ -87,7 +87,7 @@ class History extends React.Component {
           </form>
           <div className="instructions">
             <h5>Instructions</h5>
-            <li>1. Enter a date in yyyy-mm-dd format. Anything earlier than 1999-01-04 will not work.</li>
+            <li>1. Enter a date in yyyy-mm-dd format. Anything earlier than 2008-01-01 will not work for all currencies.</li>
             <li>2. Select a currency.</li>
             <li>3. Hit Submit.</li>
           </div>
